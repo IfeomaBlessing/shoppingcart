@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7aff0d4601.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <header>
+            <div class='logo'>
+                <img src="./Images/logo.png">
+            </div>
+            <div>
+                <ul id='nav-list' >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="cart.html"class='active'id="cartIcon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <div class="cart-amt">
+                        <p id="cart-amount"></p>
+                    </div>
+                </ul>
+            </div>
+
+                  <div id='mobile'>
+                    <a href="cart.html" id="cartpage" class="active"><i class="fa-solid fa-cart-shopping"></i></a>
+              <i class="fa-solid fa-bars" id="open-menu"></i>
+                  <i class="fa-solid fa-times" id="close-menu"></i>                  
+                  </div>
+         </header>
+
+       <section id="cart">
+           <table>
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+            <tbody class="cart-items" id="cart-items">
+
+
+             <!--    <div class = "cart-item">
+                    <tr>
+                    <td><i class="fa-solid fa-xmark" onclick ="removeItem(${x.id})"></i></td>
+                    <td><img src="${x.imgSrc}" alt=""></td>
+                  <td>${x.name}</td>
+                   <td>${x.price}</td>
+                   <td class="addMinus">
+                   <button onclick = "decrement(${x.id})">-</button>
+                   <p>${x.numberOfItems}</p>
+                   <button onclick = "increment(${x.id})">+</button>
+                 </td>
+                 <td class ="subtotal">#${x.numberOfItems * x.price}</td>
+                </tr>
+                <div> -->
+            </tbody>
+           </table> 
+       </section>  
+
+       <section  id="addCart">
+            <div class="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Coupon">
+                    <button>Apply</button>
+                </div>
+            </div>
+
+            <div class="total">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr id="cart-total">
+                        <!-- <td >Cart Subtotal</td>
+                        <td></td>  -->
+                    </tr>
+
+                    <tr id="shipping-cost">
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr id="final-cost">
+                        <!-- <td><strong>Total</strong></td>
+                        <td><strong></strong></td> -->
+                    </tr>
+                </table>
+                <div id="checkBtn">
+                    <!-- <button id="checkOut">Proceed to checkout</button> -->
+                </div>
+              
+            </div> 
+       </section>
+
+       <section id="newsletter">
+
+        <div class="newsletter-text">
+          <h4>Sign Up For Newsletter</h4>
+        <p>Get E-mail updates about our latest shop and<span> Special Offers</span> </p>
+      </div>
+
+      <div class="form-box">
+
+        <input type="text" placeholder="Enter Your Email">
+        <button>Sign Up</button>
+    
+    </div>
+       </section>
+   
+   <footer>
+<div class="col">
+        <img src="./Images/logo.png">
+        <h4>Contact</h4>
+        <p><strong>Address</strong>: Whitehouse Marina close, Suite 23, Lagos</p>
+        <p><strong>Phone</strong>: 012567965, +14386434576</p>
+        <p><strong>Email</strong>: classicmenwears@gmail.com</p>
+        <div class="follow">
+               <h4>Follow Us</h4>
+        <div class="social-icons">
+            <a href="#"><i><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="#"><i><i class="fa-brands fa-pinterest"></i></i></a>
+        </div>
+        </div>
+</div>
+
+
+<div class="col">
+    <h4>About</h4>
+    <a href="#"><p>About Us</p></a>
+    <a href="#"><p>Delivery Information</p></a>
+    <a href="#"><p>Privacy policy</p></a>
+    <a href="#"><p>Terms & Conditions</p></a>
+    <a href="#"><p>Contact Us</p></a>
+</div>
+
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#"><p>Sign In</p></a>
+    <a href="#"><p>View Cart</p></a>
+    <a href="#"><p>My Wishlist</p></a>
+    <a href="#"><p>Track My Order</p></a>
+    <a href="#"><p>Help</p></a>
+</div>
+
+<div class="col">
+    <h4>Install App</h4>
+    <p>From App store or Google Play</p>
+    <div class="app">
+        <img src="./Images/app.png" alt="">
+        <img src="./Images/google.png" class="google">
+    </div>
+  
+    <p>Secured Payment Gateways</p>
+    <div class="cards">
+        <img src="./Images/master.webp" alt="">
+        <img src="./Images/visa.webp" alt="">
+        <img src="./Images/btc.png" alt="">
+        <img src="./Images/Verve.png" alt="">
+    </div>
+   
+</div>
+
+
+<div class="copyright">
+   <p> &copy; 2023, IfeomaO. HTML, CSS & JavaScript Shopping Site</p>
+</div>
+
+
+
+   </footer>
+    
+
+
+   <script src="shop.js"></script>
+   <script src="cart.js"></script>
+   <script src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
