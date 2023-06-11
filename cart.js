@@ -13,7 +13,6 @@ function renderCartItems(){
     if(cart.length !== 0){
     return(cartlist.innerHTML  = cart.map((x)=>{
        return `
-    
            <div class = "cart-item">
                <tr>
                <td><i class="fa-solid fa-xmark" onclick ="removeItem(${x.id})"></i></td>
@@ -27,16 +26,16 @@ function renderCartItems(){
             </td>
             <td class ="subtotal">#${x.numberOfItems*x.price}</td>
            </tr>
-           <div>
+           </div>
            
        `
     }).join(" ")
-    
 )}
 else{
    
     cartlist.innerHTML =` `
-    cartPage.innerHTML = `
+    cartPage.innerHTML =` `
+    label.innerHTML = `
                 <h2>Cart Is Empty</h2>
                 <p>Check Out Our Products <a href="shop.html">here</a></p>
     `

@@ -681,19 +681,22 @@ footer .col .app img{
                  /* Cart Page */
                  #cart{
                     overflow-x: auto;
+                    
                 }
-                #cart{display: flex;
-                align-items: center;
-            justify-content: center;
-        flex-direction: column;}
-        #cart h2{
+                #label{
+                    display: flex;
+                    align-items: center;
+                justify-content: center;
+            flex-direction: column;
+                }
+                        #label h2{
             margin-bottom: 15px;
             word-spacing: 4px;
         }
-        #cart p{
+        #label p{
             word-spacing: 4px;
         }
-        #cart a:hover{
+        #label a:hover{
             text-decoration: underline;
         }
                #cart, #addCart {
