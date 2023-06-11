@@ -1,6 +1,7 @@
-const cartList = document.getElementById("cart-items");
-// const totalCart = document.getElementById("cart-total");
+
+const cartlist = document.getElementById("cart-items");
 const cartPage = document.getElementById("cart");
+const label = document.getElementById("label");
 const cartCalculation = document.getElementById("addCart");
 
 let cart = JSON.parse(localStorage.getItem("Product")) || [];
@@ -10,8 +11,9 @@ updateCart();
 
 function renderCartItems(){
     if(cart.length !== 0){
-    return(cartList.innerHTML  = cart.map((x)=>{
+    return(cartlist.innerHTML  = cart.map((x)=>{
        return `
+    
            <div class = "cart-item">
                <tr>
                <td><i class="fa-solid fa-xmark" onclick ="removeItem(${x.id})"></i></td>
@@ -26,13 +28,17 @@ function renderCartItems(){
             <td class ="subtotal">#${x.numberOfItems*x.price}</td>
            </tr>
            <div>
+           
        `
     }).join(" ")
+    
 )}
 else{
+   
+    cartlist.innerHTML =` `
     cartPage.innerHTML = `
                 <h2>Cart Is Empty</h2>
-                <a href="shop.html">Check Out Our Products</a>
+                <p>Check Out Our Products <a href="shop.html">here</a></p>
     `
     cartCalculation.innerHTML = ``
    

@@ -36,8 +36,9 @@
          </header>
 
        <section id="cart">
-           <table>
-            <thead>
+           <div id="label"></div>
+           <table id="cart-table">
+             <thead>
                 <tr>
                     <td>REMOVE</td>
                     <td>IMAGE</td>
@@ -47,10 +48,10 @@
                     <td>SUBTOTAL</td>
                 </tr>
             </thead>
-            <tbody class="cart-items" id="cart-items">
+            <tbody class="cart-items" id="cart-items"> 
 
 
-             <!--    <div class = "cart-item">
+                  <!--<div class = "cart-item">
                     <tr>
                     <td><i class="fa-solid fa-xmark" onclick ="removeItem(${x.id})"></i></td>
                     <td><img src="${x.imgSrc}" alt=""></td>

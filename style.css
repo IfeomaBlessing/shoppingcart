@@ -16,7 +16,6 @@ list-style-type: none;
     a{
         text-decoration:none;
         cursor:pointer;
-        font-weight:;
     }
     body{
         width:100%;
@@ -683,6 +682,20 @@ footer .col .app img{
                  #cart{
                     overflow-x: auto;
                 }
+                #cart{display: flex;
+                align-items: center;
+            justify-content: center;
+        flex-direction: column;}
+        #cart h2{
+            margin-bottom: 15px;
+            word-spacing: 4px;
+        }
+        #cart p{
+            word-spacing: 4px;
+        }
+        #cart a:hover{
+            text-decoration: underline;
+        }
                #cart, #addCart {
                 padding:30px 5%;
                }
@@ -730,6 +743,10 @@ footer .col .app img{
             }
             #cart table tbody tr td{
                 padding:20px 0;
+            }
+         
+            .addMinus button{
+                padding: 2px;
             }
              .coupon{
                 width:45%;
