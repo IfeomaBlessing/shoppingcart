@@ -427,7 +427,7 @@ footer .col p{
     margin:0 0 10px 0;
     transition: transform 0.3s;
 }
-footer .col a p:hover,
+footer .col p:hover,
 footer .social-icons i:hover{
     color: green;
     transform: translateX(-3px);
